@@ -56,9 +56,9 @@ export class AuthService {
     }
   }
 
-registerWithEmail(email: string, password: string, firstName: string, lastName: string, userName: string) {
+registerWithEmail(email: string, password: string) {
     return this.afu.createUserWithEmailAndPassword(email, password)
-      .then((user) => {
+      .then(user => {
         this.authState = user
       })
       .catch(error => {
@@ -72,7 +72,7 @@ registerWithEmail(email: string, password: string, firstName: string, lastName: 
   loginWithEmail(email: string, password: string)
   {
     return this.afu.signInWithEmailAndPassword(email, password)
-      .then((user) => {
+      .then(user => {
         this.authState = user
       })
       .catch(error => {

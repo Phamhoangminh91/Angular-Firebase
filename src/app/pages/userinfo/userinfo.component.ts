@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./userinfo.component.css']
 })
 export class UserinfoComponent implements OnInit {
-
+  title = 'Home';
   constructor(public authservice: AuthService, private router: Router) { }
 
   ngOnInit(): void {

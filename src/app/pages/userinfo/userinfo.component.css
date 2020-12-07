@@ -1,0 +1,26 @@
+h1 {
+    color: #369;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+
+  h4 {
+      font-size: 20px;
+    color: rgb(4, 70, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    float: right;
+  }
+
+  #lo{
+      float: right;
+      margin-right: 25px;
+  }
+
+  button.userinfor{
+      margin: 50px;
+      float: central;
+      background-color: paleturquoise;
+      color: black;
+  }

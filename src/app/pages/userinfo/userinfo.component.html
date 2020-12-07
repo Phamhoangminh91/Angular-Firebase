@@ -1,12 +1,16 @@
-<h1 class="alldata">
-    Home Page
+<h1 class="container">
+    {{title}}
 </h1>
+<button class="btn-danger" id="lo" (click)="authservice.singout()">Logout</button>
 <div class="container">
     <div class="row justify-content-center">
         <div class="text-info p-5" *ngIf = "authservice.currentUser">
-            <h4>{{authservice.currentUserEmail}}</h4>
-            <button class="btn-danger" (click)="authservice.singout()">Logout</button>
-            
+            <h4>Welcome: {{authservice.currentUserEmail}}</h4>
+            <h4>{{authservice.currentUserFirstName}}</h4>
         </div>
     </div>
+</div>
+<div class="container">
+<button class="userinfor" routerLink="/edit-user">Edit User Profiles</button>
+<button class="userinfor" routerLink="/add-content">Submit New Contents</button>
 </div>

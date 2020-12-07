@@ -14,13 +14,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { UserinfoComponent } from './pages/userinfo/userinfo.component';
+import { NavComponent } from './nav/nav.component';
+import { EditUserComponent } from './pages/edit-user/edit-user.component';
+import { AddContentComponent } from './pages/add-content/add-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    UserinfoComponent
+    UserinfoComponent,
+    NavComponent,
+    EditUserComponent,
+    AddContentComponent
   ],
   imports: [
     BrowserModule,

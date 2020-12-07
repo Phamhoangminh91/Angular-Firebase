@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
   {
     this.clearErrorMessage();
     if (this.validateForm(this.email, this.password)) {
-      this.authservice.registerWithEmail(this.email, this.password, this.firstName, this.lastName, this.userName)
+      this.authservice.registerWithEmail(this.email, this.password)
         .then(() => {
           this.message = "you are register with data on firbase"
           //this.router.navigate(['/userinfo'])
